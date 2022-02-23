@@ -29,19 +29,19 @@ function onMessageHandler (target, context, msg, self) {
   const commandName = msg.trim();
 
   // If the command is known, let's execute it
-  if (commandName === 'yoaninCoffe') {
-    const num = rollDice(commandName);
-    client.say(target, `yoaninCoffe);
+  if (commandName === 'f') {
+    client.say(target, 'bdeF');
+    console.log(`* Executed ${commandName} command`);
+  } if (commandName === 'aff') {
+    client.say(target, 'bdeAff');
+    console.log('* Executed ${commandName} command');
+  }
+  else {
+    console.log(`* Unknown command ${commandName}`);
   }
 }
 
-// Function called when the "dice" command is issued
-function rollDice () {
-  const sides = 20;
-  return Math.floor(Math.random() * sides) + 1;
-}
-
-// Called every time the bot connects to Twitch chat
+  // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
   console.log('* Connected to ${addr}:${port}');
 }
