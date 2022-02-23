@@ -38,6 +38,9 @@ function onMessageHandler (target, context, msg, self) {
   } if (commandName === 'SeriousSloth') {
     client.say(target, 'SeriousSloth');
     console.log('* Executed ${commandName} command');
+  } if (commandName === 'BIGHAM') {
+    client.say(target, 'BIGHAM');
+    console.log('* Executed ${commandName} command');
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
