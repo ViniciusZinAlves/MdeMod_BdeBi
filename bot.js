@@ -35,8 +35,10 @@ function onMessageHandler (target, context, msg, self) {
   } if (commandName === 'aff') {
     client.say(target, 'bdeAff');
     console.log('* Executed ${commandName} command');
-  }
-  else {
+  } if (commandName === 'SeriousSloth') {
+    client.say(target, 'SeriousSloth');
+    console.log('* Executed ${commandName} command');
+  } else {
     console.log(`* Unknown command ${commandName}`);
   }
 }
