@@ -29,16 +29,7 @@ function onMessageHandler (target, context, msg, self) {
   const commandName = msg.trim();
 
   // If the command is known, let's execute it
-  if (commandName === 'f') {
-    client.say(target, 'bdeF');
-    console.log(`* Executed ${commandName} command`);
-  } if (commandName === 'aff') {
-    client.say(target, 'bdeAff');
-    console.log('* Executed ${commandName} command');
-  } if (commandName === 'SeriousSloth') {
-    client.say(target, 'SeriousSloth');
-    console.log('* Executed ${commandName} command');
-  } if (commandName === 'BIGHAM') {
+  if (commandName === 'BIGHAM') {
     client.say(target, 'BIGHAM');
     console.log('* Executed ${commandName} command');
   } else {
