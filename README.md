@@ -30,7 +30,7 @@ To start, you’ll need three environment variables:
 
 2. Glitch automatically installs Node and Tmi.js for us.
 
-3. Add the three environmental vars in our [`.env`](https://glitch.com/edit/#!/twitch-chatbot?path=.env:1:0) file.
+3. Add the three environmental vars in our [`.env`](https://glitch.com/edit/#!/MdeMod_BdeBi?path=.env:1:0) file.
 
 4. View the code in `bot.js`. 
 
