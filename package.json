@@ -1,7 +1,7 @@
 {
   "name": "mdemod_bdebi",
   "version": "0.0.1",
-  "description": "A simple app chatbot example. Using the command !echo will simply repeat the message.",
+  "description": "A simple app chatbot example.",
   "main": "src/bot.js",
   "scripts": {
     "start": "node src/bot.js"
@@ -14,7 +14,7 @@
     "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/MdeMod_BdeBi"
+    "url": "https://github.com/ViniciusZinAlves/MdeMod_BdeBi"
   },
   "type": "module",
   "license": "MIT",
