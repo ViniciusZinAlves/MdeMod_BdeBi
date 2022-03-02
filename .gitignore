@@ -1,9 +1,9 @@
 contantes.js
-node_modules
+node_modules/
 package-lock.json
-views
-public
+views/
+public/
 .data
-.config
+.config/
 .glitch-assets
 .glitchdotcom.json
