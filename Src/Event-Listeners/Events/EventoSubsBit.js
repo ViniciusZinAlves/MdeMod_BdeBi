@@ -1,11 +1,11 @@
-import {GetClient} from '../../Client.js'
+import {GetClient} from '../../MainIndex.js'
 
-import {onSubscriptionHandler}    from '../FuncoesEventos/index.js'
-import {onCheerHandler}           from '../FuncoesEventos/index.js'
-import {resubHandler}             from '../FuncoesEventos/index.js'
-import {subGiftHandler}           from '../FuncoesEventos/index.js'
-import {OnSubsGift}               from '../FuncoesEventos/index.js'
-import {onGiftPaidUpgradeHandler} from '../FuncoesEventos/index.js'
+import {onSubscriptionHandler}    from '../indexListeners.js'
+import {onCheerHandler}           from '../indexListeners.js'
+import {resubHandler}             from '../indexListeners.js'
+import {subGiftHandler}           from '../indexListeners.js'
+import {OnSubsGift}               from '../indexListeners.js'
+import {onGiftPaidUpgradeHandler} from '../indexListeners.js'
 
 
 const EventosMap = new Map([

@@ -1,4 +1,5 @@
-import {MandaMensagem} from '../../../Event-Speakers/MandaMensagem.js'
+import {MandaMensagem} from '../../../Event-Speakers/indexSpeaker.js'
+import {SucessLog} from '../../../MainIndex.js'
 
 export function onHostingHandler(channel, target, viewers)
 {

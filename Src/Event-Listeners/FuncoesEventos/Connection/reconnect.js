@@ -1,5 +1,5 @@
-
+import {ErrorLog} from '../../../MainIndex.js'
 export function reconnectHandler() 
 {
-  console.log('Tentando reconexão...')
+  ErrorLog('Tentando reconexão...')
 }

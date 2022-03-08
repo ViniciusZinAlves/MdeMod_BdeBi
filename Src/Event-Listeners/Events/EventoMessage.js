@@ -1,7 +1,7 @@
-import {GetClient} from '../../Client.js'
+import {GetClient} from '../../MainIndex.js'
 
-import {onMessageHandler} from '../FuncoesEventos/index.js'
-import {onWhisperHandler} from '../FuncoesEventos/index.js'
+import {onMessageHandler} from '../indexListeners.js'
+import {onWhisperHandler} from '../indexListeners.js'
 
 const EventosMap = new Map([
     ['message', onMessageHandler],

@@ -1,17 +1,21 @@
-import {GetClient}                                         from '../../../Client.js'
-import {MandaMensagem, MandaMensagemComandos}              from '../../../Event-Speakers/MandaMensagem.js'
-import {NOME_CANAL, LISTA_MODS_BDEBI}  from '../../../contantes.js'
+import {GetClient}             from '../../../MainIndex.js'
+import {LISTA_MODS_BDEBI}      from '../../../MainIndex.js'
+import {SucessLog}             from '../../../MainIndex.js'
 
 import {checkTwitchChatForCommands} from './Message.js'
+import {CarregaVariaveisWhisper}    from './Message.js'
 
 const client = GetClient();
 export function onWhisperHandler (from, usuario, mensagem, bot)
  {
   if (bot) return;
   from = from.toLowerCase();
-  let ehModBi = LISTA_MODS_BDEBI.some(mods_bi => from.includes(mods_bi.toLowerCase()))
+  let ehModBiWhisper = LISTA_MODS_BDEBI.some(mods_bi => from.includes(mods_bi.toLowerCase()))
   
-  if(ehModBi)
-    checkTwitchChatForCommands(usuario, mensagem)
+  if(ehModBiWhisper)
+  {
+    CarregaVariaveisWhisper(mensagem, ehModBiWhisper)
+    checkTwitchChatForCommands()
+  }
   
 }

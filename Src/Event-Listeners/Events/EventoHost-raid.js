@@ -1,8 +1,8 @@
-import {GetClient} from '../../Client.js'
+import {GetClient} from '../../MainIndex.js'
 
-import {onHostingHandler} from '../FuncoesEventos/index.js'
-import {onRaidedHandler}  from '../FuncoesEventos/index.js'
-import {onHostedHandler}  from '../FuncoesEventos/index.js'
+import {onHostingHandler} from '../indexListeners.js'
+import {onRaidedHandler}  from '../indexListeners.js'
+import {onHostedHandler}  from '../indexListeners.js'
 
 const EventosMap = new Map([
     ['hosting', onHostingHandler],

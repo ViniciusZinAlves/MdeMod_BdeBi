@@ -1,8 +1,8 @@
-import {GetClient} from '../../Client.js'
+import {GetClient} from '../../MainIndex.js'
 
-import {onConnectedHandler}    from '../FuncoesEventos/index.js'
-import {onDisconnectedHandler} from '../FuncoesEventos/index.js'
-import {reconnectHandler}      from '../FuncoesEventos/index.js'
+import {onConnectedHandler}    from '../indexListeners.js'
+import {onDisconnectedHandler} from '../indexListeners.js'
+import {reconnectHandler}      from '../indexListeners.js'
 
 const EventosMap = new Map([
     ['connected', onConnectedHandler],

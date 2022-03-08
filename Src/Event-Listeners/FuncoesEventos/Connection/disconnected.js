@@ -1,5 +1,6 @@
+import {ErrorLog} from '../../../MainIndex.js'
 
 export function onDisconnectedHandler(reason) 
 {
-  console.log(`bot foi desconectado por ${reason}`);
+  ErrorLog(`bot foi desconectado por ${reason}`);
 }

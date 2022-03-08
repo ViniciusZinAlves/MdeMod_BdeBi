@@ -1,8 +1,7 @@
-import {Connect} from './Client.js'
+import {Connect} from './MainIndex.js'
 
 // Connect to Twitch:
 Connect();
-
 
 import {ChamaEventosConexao} from './Event-Listeners/Events/EventosConexao.js'
 import {ChamaEventoMensagem} from './Event-Listeners/Events/EventoMessage.js'
@@ -11,5 +10,5 @@ import {ChamaEventosHost   } from './Event-Listeners/Events/EventoHost-raid.js'
 
 ChamaEventosConexao();
 ChamaEventoMensagem();
-ChamaEventosSubs();
-ChamaEventosHost();
+ChamaEventosSubs   ();
+ChamaEventosHost   ();

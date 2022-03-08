@@ -1,4 +1,4 @@
-import {NOME_BOT, OAUTH_TOKEN, NOME_CANAL} from './contantes.js'
+import {NOME_BOT, OAUTH_TOKEN, NOME_CANAL} from './MainIndex.js'
 
 import tmi from 'tmi.js'
 // Define configuration options
@@ -23,10 +23,10 @@ const client = new tmi.client(opts);
 
 export function GetClient()
 {
-    return client;
+  return client;
 }
 
 export function Connect()
 {
-    client.connect();
+  client.connect();
 }
